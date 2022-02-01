@@ -1,0 +1,748 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+/* GLOBAL DESIGN */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+section {
+  padding: 100px 300px;
+  min-height: 100vh;
+  width: 100%;
+}
+section h1 {
+  margin-bottom: 4rem;
+  font-size: 5rem;
+  color: #4d4b7a;
+}
+
+/* ==================================== NAV ==================================== */
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 100px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  background: #fff;
+}
+nav a {
+  display: block;
+  padding: 20px 30px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: #333;
+  transition: 0.4s;
+  font-weight: 400;
+}
+nav a:hover {
+  color: #555382;
+}
+
+/* ==================================== HEADER ==================================== */
+header {
+  min-height: 100vh;
+  width: 100%;
+  background: #f7f7f7;
+}
+header .content {
+  display: flex;
+}
+header .content .image {
+  width: 40%;
+  text-align: right;
+}
+header .content .image img {
+  width: 70%;
+  margin-top: 120px;
+}
+header .content .text {
+  display: flex;
+  align-self: center;
+  width: 60%;
+  padding-left: 100px;
+  padding-right: 200px;
+}
+header .content .text div h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+  color: #4d4b7a;
+}
+header .content .text div h3 {
+  font-size: 15px;
+  margin-top: 5px;
+  color: gray;
+}
+header .content .text div p {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 25px;
+}
+header .content .text div .links {
+  display: flex;
+  margin-top: 20px;
+}
+
+/* ==================================== EDUCATION ==================================== */
+section.education .education__body {
+  display: flex;
+}
+section.education ul {
+  width: 60%;
+  list-style: none;
+}
+section.education ul li {
+  position: relative;
+  margin-bottom: 2rem;
+  display: flex;
+}
+section.education ul li .color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #555382;
+  margin-right: 20px;
+  z-index: 2;
+}
+section.education ul li h3 {
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+section.education ul li p {
+  font-size: 16px;
+  line-height: 25px;
+}
+section.education ul li p span {
+  font-weight: 500;
+}
+section.education ul li p:nth-child(1) {
+  margin-bottom: 5px;
+}
+
+section.education ul li::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  height: calc(100% + 2rem);
+  width: 2px;
+  background: #ccc;
+  z-index: 1;
+}
+section.education ul li:last-child::before {
+  height: 90%;
+}
+section.education .education__image {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.education .education__image img {
+  width: 100%;
+}
+
+/* ==================================== PROJECTS ==================================== */
+section.projects {
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 0;
+}
+.myprojects .myproject {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+.myprojects .myproject .myproject__image {
+  width: 49%;
+}
+.myprojects .myproject .myproject__image img {
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.myprojects .myproject .myproject__content {
+  width: 49%;
+  padding-left: 25px;
+}
+.myprojects .myproject .myproject__content h3 {
+  font-size: 2.5rem;
+  color: #333;
+}
+.myprojects .myproject .myproject__content p {
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+.myprojects .myproject .myproject__content p span {
+  font-weight: 500;
+}
+.myprojects .myproject .myproject__content .tools {
+  display: flex;
+  align-items: center;
+}
+.myprojects .myproject .myproject__content .tools img {
+  width: 50px;
+  margin-right: 20px;
+}
+
+/* ==================================== SKILLS ==================================== */
+section.skills {
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-top: 100px;
+  overflow: hidden;
+}
+.skills .skills__content {
+  display: flex;
+  text-align: center;
+}
+.skills .skills__content .image {
+  width: 40%;
+}
+
+.skills .skills__content ul {
+  width: 60%;
+  list-style: none;
+}
+.skills .skills__content ul li {
+  position: relative;
+  margin-bottom: 2rem;
+  display: flex;
+}
+.skills .skills__content ul li .color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #555382;
+  margin-right: 20px;
+  z-index: 2;
+}
+.skills .skills__content ul li div:last-child {
+  width: calc(100% - 40px);
+}
+.skills .skills__content ul li div h3 {
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.skills .skills__content ul li p {
+  font-size: 16px;
+  line-height: 25px;
+  text-align: left;
+  display: block;
+}
+.skills .skills__content ul li p span {
+  font-weight: 500;
+}
+.skills .skills__content ul li::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  height: calc(100% + 2rem);
+  width: 2px;
+  background: #ccc;
+  z-index: 1;
+}
+.skills .skills__content ul li:last-child::before {
+  height: 90%;
+}
+
+/* ==================================== FOOTER ==================================== */
+.contact{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contactInfo{
+  width: 50%;
+}
+.contactInfo .elements{
+  margin-top: 45px;
+}
+.elements .element{
+  width: fit-content;
+  display: flex;
+  height: 40px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+.elements .element .icon{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.elements .element .content{
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.contactform{
+  width: 50%;
+  padding: 25px;
+  background: #f7f7f7;
+}
+.contactform form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.contactform form input,
+.contactform form textarea{
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.contactform form button{
+  background: #4d4b7a;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px 20px;
+  outline: none;
+  border: navajowhite;
+}
+
+/* ==================================== FOOTER ==================================== */
+.footer {
+  background: #f7f7f7;
+  min-height: 60vh;
+  padding: 100px 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .block {
+  width: 50%;
+  position: relative;
+}
+.footer .block h2 {
+  font-size: 2.5rem;
+}
+.footer .block p {
+  text-align: right;
+  font-size: 18px;
+  line-height: 28px;
+}
+.footer .block h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: right;
+}
+.footer .block .links {
+  display: flex;
+  justify-content: right;
+}
+.links a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: 0.4s;
+}
+.links a:hover {
+  transform: scale(1.1);
+  color: #4d4b7a;
+}
+.footer .block p.copy {
+  font-size: 15px;
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1380px) {
+  section {
+    padding: 80px 200px;
+  }
+  section h1 {
+    margin-bottom: 3rem;
+    font-size: 4rem;
+  }
+
+  section.education ul li {
+    margin-bottom: 1.5rem;
+  }
+  section.education ul li .color {
+    margin-right: 15px;
+  }
+  section.education ul li h3 {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 8px;
+  }
+  section.education ul li p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  section.education ul li::before {
+    width: 1px;
+  }
+
+  section.skills {
+    padding: 100px 200px 0 200px;
+  }
+  .skills .skills__content ul li {
+    margin-bottom: 1.5rem;
+  }
+  .skills .skills__content ul li .color {
+    margin-right: 15px;
+  }
+  .skills .skills__content ul li h3 {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 8px;
+  }
+  .skills .skills__content ul li p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .skills .skills__content ul li::before {
+    width: 1px;
+  }
+
+  .myprojects .myproject {
+    margin-bottom: 80px;
+  }
+  .myprojects .myproject .myproject__content {
+    padding-left: 20px;
+  }
+  .myprojects .myproject .myproject__content h3 {
+    font-size: 2rem;
+  }
+  .myprojects .myproject .myproject__content p {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+  .myprojects .myproject .myproject__content .tools img {
+    width: 35px;
+    margin-right: 15px;
+  }
+
+  .footer {
+    padding: 70px 200px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  section {
+    padding: 50px 150px;
+  }
+  section h1 {
+    margin-bottom: 2.5rem;
+    font-size: 3.5rem;
+  }
+
+  section.education ul li {
+    margin-bottom: 1rem;
+  }
+  section.education ul li .color {
+    margin-right: 10px;
+  }
+  section.education ul li h3 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  section.education ul li p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  section.skills {
+    padding: 0 150px;
+  }
+  .skills .skills__content ul li {
+    margin-bottom: 1rem;
+  }
+  .skills .skills__content ul li .color {
+    margin-right: 10px;
+  }
+  .skills .skills__content ul li h3 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .skills .skills__content ul li p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .myprojects .myproject {
+    margin-bottom: 50px;
+  }
+  .myprojects .myproject .myproject__content {
+    padding-left: 20px;
+  }
+  .myprojects .myproject .myproject__content h3 {
+    font-size: 1.7rem;
+  }
+  .myprojects .myproject .myproject__content p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .myprojects .myproject .myproject__content .tools img {
+    width: 35px;
+    margin-right: 15px;
+  }
+
+  .footer {
+    padding: 70px 200px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  section {
+    padding: 25px;
+    overflow: hidden;
+  }
+  section h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    padding: 10px 0;
+  }
+
+  nav {
+    padding: 0 25px;
+    justify-content: center;
+  }
+  nav a {
+    padding: 10px;
+    margin-left: 5px;
+    font-size: 13px;
+  }
+
+  header {
+    min-height: fit-content;
+    margin-bottom: 50px;
+    padding-bottom: 25px;
+  }
+  header .content {
+    flex-wrap: wrap;
+  }
+  header .content .image {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  header .content .image img {
+    margin-top: 40px;
+  }
+  header .content .text {
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  header .content .text div h2 {
+    display: none;
+  }
+  header .content .text div h1 {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  header .content .text div h3 {
+    font-size: 13px;
+    margin-top: 5px;
+    text-align: center;
+  }
+  header .content .text div p {
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: justify;
+  }
+  header .content .text div .links {
+    width: 100%;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  section.education {
+    min-height: fit-content;
+  }
+  section.education .education__body {
+    flex-wrap: wrap;
+  }
+  section.education ul {
+    width: 100%;
+  }
+  section.education ul li {
+    margin-bottom: 20px;
+  }
+  section.education ul li .color {
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+  }
+  section.education ul li h3 {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 0;
+  }
+  section.education ul li p {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  section.education ul li p:nth-child(2) {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+  section.education ul li::before {
+    top: 5px;
+    left: 4px;
+    height: calc(100% + 20px);
+    width: 1px;
+  }
+  section.education ul li:last-child::before {
+    height: 90%;
+  }
+  section.education .education__image {
+    display: none;
+  }
+
+  section.projects {
+    min-height: fit-content;
+  }
+  .myprojects .myproject {
+    margin-bottom: 50px;
+  }
+  .myprojects .myproject .myproject__image {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .myprojects .myproject .myproject__image img {
+    width: 100%;
+  }
+  .myprojects .myproject .myproject__content {
+    width: 100%;
+    padding-left: 0;
+  }
+  .myprojects .myproject .myproject__content h3 {
+    font-size: 20px;
+  }
+  .myprojects .myproject .myproject__content p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  .myprojects .myproject .myproject__content .tools img {
+    width: 30px;
+    margin-right: 10px;
+  }
+  .myprojects .myproject:last-child {
+    flex-direction: column-reverse;
+  }
+
+  section.skills {
+    padding: 25px;
+    min-height: fit-content;
+  }
+  .skills .skills__content .image {
+    display: none;
+  }
+  .skills .skills__content ul {
+    width: 100%;
+  }
+  .skills .skills__content ul li {
+    margin-bottom: 20px;
+  }
+  .skills .skills__content ul li .color {
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+  }
+  .skills .skills__content ul li div:last-child {
+    width: calc(100% - 40px);
+  }
+  .skills .skills__content ul li div h3 {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 0;
+  }
+  .skills .skills__content ul li p {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .skills .skills__content ul li::before {
+    top: 5px;
+    left: 4px;
+    height: calc(100% + 20px);
+    width: 1px;
+  }
+  .contactInfo{
+    width: 100%;
+  }
+  .contactform{
+    width: 100%;
+  }
+
+  .footer {
+    min-height: fit-content;
+    padding: 25px;
+  }
+  .footer .block {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .footer .block h2 {
+    font-size: 1.5rem;
+  }
+  .footer .block p {
+    text-align: left;
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .footer .block h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  .footer .block .links {
+    justify-content: left;
+  }
+  .links a {
+    margin-left: 0;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+  }
+  .links a svg {
+    width: 15px;
+  }
+  .links a:hover {
+    transform: scale(1);
+  }
+  .footer .block p.copy {
+    display: none;
+  }
+}
